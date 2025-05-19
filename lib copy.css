@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+:root{
+    --primary-text-color:#3c5556;
+    --seconday-text-color:#3c5556;
+    --accent-color:#3c5556;
+    --accent-color-dark:#3c5556;
+    --padding-inline-section:20px;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    color: var(--primary-text-color);
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #3c5556;
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style:none;
+}
+
+.small-bold-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.container{   
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.banner-text{
+    color: #f6efe7;
+    padding: 15px 30px;
+    text-align: center;
+}
+.top-banner{
+    background-color: #3c5556;
+    padding: 25px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-link{
+    color: black;
+    transition: 0.2s ease-out;
+}
+.hover-link:hover{
+    color: var(--accent-color);
+}
+/* nav-bar */
+
+.main-nav {
+    margin: 20px;
+    justify-content: center;
+}
+.nav-links{
+    flex-basis: 800px;
+}
+.nav-links ul{
+    justify-content:space-between;
+    /* gap: 30px; */
+}
+
+/* button */
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--seconday-text-color);
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+
+/* main-content */
+.main-content {
+    text-align: center;
+    background-color: #f6efe7;
+}
+
+.resource-section {
+    background-color: #e9f1ef;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.resource {
+    display: inline-block;
+    /* Display resources horizontally */
+    vertical-align: top;
+    /* Align resources at the top */
+    margin-right: 20px;
+    /* Add some space between resources */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+.resource-section {
+    /* Add styles for overflow and white-space */
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.more-button {
+    /* Style for the "More" button */
+    cursor:pointer ;
+    color: white;
+    margin-top: 10px;
+    display: none;
+    /* Initially hidden */
+}
+
+.more-button:hover {
+    text-decoration:underline ;
+}
+
+/* Adjust the position of the "More" button */
+.resource-section:hover .more-button {
+    display:flex ;
+    /* Display on hover */
+    position:fixed ;
+    top:50%;
+    /* Adjust as needed */
+    right: 0;
+    background-color:#3c5556;
+    /* Add background color for better visibility */
+    padding: 5px;
+    border: 1px solid #20392c;
+    border-radius: 5px;
+    z-index: 1;
+    /* Ensure it's above other elements */
+}
+/* subfooter */
+.subfooter{
+    background-color: #3c5556;
+    padding: var(--padding-inline-section);
+}
+.subfooter-container
+{
+    justify-content: center;
+    gap: 30px;
+}
+
+nav{
+    background-color: #dfbab2;
+    padding: 1px;
+}
+
+h2, h3 {
+    color: #480000;
+    padding-block: 20px;
+}
+
+
+
+/* subfooter */
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+.subfooter-container
+{
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Adjustments for precise alignment between header and sidebar */
+
+/* Resetting default margin/padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: poppins, sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin-top: 0; /* Remove default margin */
+}
+
+/* Header styles */
+
+
+.menu-toggle {
+    float: left;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#sidebar nav{
+    background-color: #fff;
+
+}
+/* Sidebar styles */
+#sidebar {
+    position: fixed;
+    top: 120px; /* Adjusted top position to start just below header */
+    left: -250px;
+    width: 250px;
+    height: calc(100% - 56px); /* Adjusted height to fit below header */
+    background-color: #fff;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    z-index: 1;
+    border-right: 1px solid #fff; /* Add border to separate sidebar visually */
+}
+
+#sidebar.active {
+    left: 0; /* Slide sidebar in */
+}
+
+/* Main content styles */
+main {
+    transition: margin-left 0.3s ease;
+    width: 100%;
+    margin-left: 0; /* Initially no margin for content */
+}
+
+/* Sidebar active styles for the main content */
+#sidebar.active ~ main {
+    margin-left: 250px; /* Push content right when sidebar active */
+}
+
+/* Sections styles - example styles for the content sections */
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 100px;
+    }
+    main {
+        margin-left: 100px;
+    }
+}
+
+.menu-toggle {
+    font-size: 28px; /* Increase the font size */
+}
+
+#sidebar nav ul li a span{
+    font-size: 15px;
+}

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#3c5556;
+    --seconday-text-color:#577592;
+    --accent-color:#c23b22;
+    --accent-color-dark:#840000;
+    --padding-inline-section:20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color:var(--primary-text-color);
+    background-color: #eadeda;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'poppins', sans-serif;
+    font-size: 1.25rem;
+    color: var(--seconday-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+/* utlity class */
+.small-bold-text{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-link{
+    color:var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-link:hover{
+    color: black;
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 10px 20px;
+    box-shadow: 0 0 2px var(--seconday-text-color);
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: #a31c0a;
+}
+.secondary-button{
+    border: 0.5px solid ;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #c23b22;
+    padding: 10px 20px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: black;
+    color: black;
+}
+
+/* top banner */
+.top-banner{
+    background-color: #3c5556;
+}
+
+
+.banner-text{
+     color: #e9d1cf;
+    padding: 15px 30px;
+    text-align: center;
+}
+/* nav bar */
+
+.main-nav{
+    margin-top: 10px;
+}
+
+.company-logo img{
+  width: 150px;
+  border-radius: 100px;
+}
+
+.nav-links{
+    flex-basis: 650px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+/* header section */
+
+header{
+    padding:20px var(--padding-inline-section) 0;
+}
+.header-section{
+    justify-content: center;
+    gap:10px;
+}
+.header-left{
+    max-width: 40vw;
+    
+}
+.header-left h1{
+    margin-top: 20px;
+}
+.get-started-btn{
+margin-top: 20px;
+}
+.header-right img{
+    width:250px;
+}
+
+/* features-section */
+.features-section{
+    padding: 80px var(--padding-inline-section);
+}
+.features-header{
+    text-align: center;
+}
+.features-heading-text{
+  
+    margin-bottom: 10px;
+}
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.features-card{
+    flex-direction: column;
+    gap: 5px;
+    max-width: 30%;
+    text-align: center;
+}
+.features-card img{
+ width: 60px;
+}
+
+/* big features */
+.big-features-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+.big-features-container{
+    gap: 30px;
+}
+.feature-img img{
+    width: 300px;
+}
+.features-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* cta section */
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: black;
+}
+.cta-section{
+    padding: 50px var(--padding-inline-section) 80px;
+    background-color: #c8dbd7;
+}
+.cta-section-container p{
+    color: black;
+    margin-top: 20px;
+}
+/* footer */
+footer{
+    padding-block: 80px;
+    background-color: #f6efe7;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* subfooter */
+.subfooter{
+    background-color: #c8dbd7;
+    padding: var(--padding-inline-section);
+}
+.subfooter-container
+{
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+/* new csss */
+
+/* CSS for animations */
+/* Add other animation classes as needed */
+
+/* Fade in animation */
+.fadeIn {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

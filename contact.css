@@ -1,0 +1,141 @@
+
+/* Reset and general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+    background-color: #e9f1ef;
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Contact section styling */
+.contact-section {
+    padding: 50px 0;
+}
+
+.contact-options {
+    background-color: #e5d4c3;
+    display: flex;
+    flex-direction: column; /* Align contact options vertically */
+    gap: 30px;
+    background-color: #e5d4c3; /* Transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px); /* Apply blur effect */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Soft border */
+}
+
+.option {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background for each option */
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Soft border */
+}
+
+.option h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3c5556; /* Darker blue text color for option titles */
+}
+
+.option p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #3c5556; /* Lighter blue text color for option details */
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Soft border */
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent background for input areas */
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #3c5556; /* Slightly transparent background for buttons */
+    color: #fff; /* White text color */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Soft border */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #20392c; /* Solid color on hover */
+}
+
+
+
+
+/* Navigation styling */
+.company-logo{
+    padding-right: 20px;
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #159fd1ae; /* Light blueish background color */
+    padding: 10px 20px;
+}
+
+.company-logo img {
+    height: 60px; /* Adjust the logo height as needed */
+    border-radius: 50%; /* Create a circle */
+    overflow: hidden; /* Hide overflow to maintain the circle shape */
+    object-fit: cover; /* Prevent image distortion */
+   
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    background-color: #144163; /* Darker blue color on hover */
+}

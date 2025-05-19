@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6efe7; /* Set background color to off-white */
+  }
+  
+  .company-logo {
+    padding-right: 20px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3c5556;
+    /* Light blueish background color */
+    padding: 10px 20px;
+}
+
+.company-logo img {
+    height: 130px;
+    /* Adjust the logo height as needed */
+    border-radius: 80%;
+    /* Create a circle */
+    overflow: hidden;
+    /* Hide overflow to maintain the circle shape */
+    object-fit: cover;
+    /* Prevent image distortion */
+
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li a {
+    color: #f5d4c3;
+   
+}
+
+.nav-links ul li a:hover {
+  color: #480000;
+   
+}
+.letter{
+    text-align: center;
+    color: #480000;
+}
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in each row */
+    gap: 20px; /* Space between grid items */
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .section {
+    background-color: #e1d4cd; /* Set section background color to white */
+    color: #000; /* Set text color to black */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transition for box shadow */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Stack title and description vertically */
+    align-items: flex-start; /* Align content to the left */
+    padding: 20px;
+  }
+
+ 
+  .section p {
+    font-size: 20px; 
+    color: #183b56;
+  }
+  
+  
+  .section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase box shadow intensity on hover */
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .primary-button {
+    background-color: #3c5556;
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--seconday-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+    background-color:#20392c;
+}
+  
+  /* footer {
+    background-color: #b9cde4; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 30px;
+  }
+  
+  .footer-options a {
+    color: #fff;
+    text-decoration: none;
+  }
+   */
+   .subfooter {
+    background-color: #c8dbd7;
+    padding: 20px;
+}
+.hover-link {
+    color: #183b56;;
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color:black;
+}
+
+.subfooter-container {
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+}
